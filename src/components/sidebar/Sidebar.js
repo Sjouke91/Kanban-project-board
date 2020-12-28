@@ -3,19 +3,9 @@ import { Link } from "react-router-dom";
 import "../../App.scss";
 import SidebarData from "./SidebarData.js";
 import MenuIcon from "@material-ui/icons/Menu";
-import { IconButton, makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles({
-  root: {
-    "&:hover": {
-      backgroundColor: "transparant",
-    },
-  },
-});
 
 function Sidebar() {
   const [menuCollapse, set_menuCollapse] = useState("true");
-  const classes = useStyles();
   const height = menuCollapse ? "40px" : "95vh";
 
   return (
