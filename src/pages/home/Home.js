@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import InputBase from "@material-ui/core/InputBase";
-import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import Kanban from "../../components/board/Kanban";
+import Paper from "@material-ui/core/Paper";
+import ListOfTasks from "../../components/board/List";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Switch from "@material-ui/core/Switch";
+import data from "../../dummyData/dummy.json";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,17 +19,6 @@ const useStyles = makeStyles((theme) => ({
     height: "65px",
     paddingTop: theme.spacing(2),
     color: theme.palette.text.secondary,
-  },
-  paper: {
-    backgroundColor: "rgb(245, 245, 245)",
-    height: "800px",
-    padding: theme.spacing(1),
-    paddingTop: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    fontFamily: "'Courier New', Courier, monospace;",
-    fontSize: "1em",
-    fontWeight: 600,
   },
   search: {
     position: "relative",
@@ -60,10 +53,14 @@ const useStyles = makeStyles((theme) => ({
       width: "20ch",
     },
   },
+  addIcon: {
+    backgroundColor: "grey",
+  },
 }));
 
 export default function Home() {
   const classes = useStyles();
+  const [viewList, set_viewList] = useState(false);
 
   return (
     <div className={classes.root}>
@@ -125,23 +122,25 @@ export default function Home() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>To do</Paper>
+        <Grid item xs={1}>
+          <div className={classes.header}>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={viewList}
+                  onChange={() => {
+                    set_viewList(!viewList);
+                  }}
+                  name="checkedB"
+                  color="primary"
+                />
+              }
+              label={viewList ? "List" : "Kanban"}
+            />
+          </div>
         </Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>In progress</Paper>
-        </Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>Up for review</Paper>
-        </Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>Testing</Paper>
-        </Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>Done</Paper>
-        </Grid>
+
+        {viewList ? <ListOfTasks data={data} /> : <Kanban data={data} />}
       </Grid>
     </div>
   );
