@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "to do",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "to do",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "In progress",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "In progress",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "To be reviewed",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "Test",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "Test",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  },
+  {
+    "title": "Fetch data from server and display on page.",
+    "owner": "Sjouke Bosma",
+    "tags": ["Front end", "react"],
+    "status": "Done",
+    "sprint": 1,
+    "priority": "high",
+    "deadline": "2020/11/03",
+    "description": "Some additional description of the task to clarify the task to other team members"
+  }
+]
