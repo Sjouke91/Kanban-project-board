@@ -1,0 +1,65 @@
+[
+  {
+    "title": "to do",
+    "items": [
+      {
+        "id": 0,
+        "title": "task 1.",
+        "owner": "Sjouke Bosma"
+      },
+      {
+        "id": 1,
+        "title": "task 2.",
+        "owner": "Sjouke Bosma"
+      }
+    ]
+  },
+  {
+    "title": "in progress",
+    "items": [
+      {
+        "id": 0,
+        "title": "task 3.",
+        "owner": "Sjouke Bosma"
+      },
+      {
+        "id": 1,
+        "title": "task 4.",
+        "owner": "Sjouke Bosma"
+      }
+    ]
+  },
+  {
+    "title": "review",
+    "items": [
+      {
+        "id": 0,
+        "title": "task 5.",
+        "owner": "Sjouke Bosma"
+      },
+      {
+        "id": 1,
+        "title": "task 6.",
+        "owner": "Sjouke Bosma"
+      }
+    ]
+  },
+  {
+    "title": "testing",
+    "items": [
+      {
+        "id": 0,
+        "title": "task 7.",
+        "owner": "Sjouke Bosma"
+      }
+    ]
+  },
+  {
+    "title": "done",
+    "items": []
+  },
+  {
+    "title": "done",
+    "items": []
+  }
+]

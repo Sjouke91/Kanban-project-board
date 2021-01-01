@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -10,6 +11,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 1,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -20,6 +22,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 2,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -30,6 +33,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 3,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -40,6 +44,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 4,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -50,6 +55,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 5,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -60,6 +66,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 6,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],
@@ -70,6 +77,7 @@
     "description": "Some additional description of the task to clarify the task to other team members"
   },
   {
+    "id": 7,
     "title": "Fetch data from server and display on page.",
     "owner": "Sjouke Bosma",
     "tags": ["Front end", "react"],

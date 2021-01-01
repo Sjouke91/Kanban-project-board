@@ -1,0 +1,16 @@
+.owner {
+  display: flex;
+  align-items: center;
+  #icon {
+    flex: 25%;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    color: rgb(240, 176, 0);
+  }
+  #text {
+    flex: 75%;
+    place-items: center;
+    align-items: center;
+  }
+}
