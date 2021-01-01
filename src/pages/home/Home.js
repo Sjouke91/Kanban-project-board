@@ -8,7 +8,8 @@ import Paper from "@material-ui/core/Paper";
 import ListOfTasks from "../../components/board/List";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
-import data from "../../dummyData/dummy.json";
+import tasks from "../../dummyData/tasks.json";
+import Login from "../../pages/login/Login";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     marginTop: "10px",
+    position: "fixed",
     height: "65px",
     paddingTop: theme.spacing(2),
     color: theme.palette.text.secondary,
@@ -139,8 +141,10 @@ export default function Home() {
             />
           </div>
         </Grid>
-
-        {viewList ? <ListOfTasks data={data} /> : <Kanban data={data} />}
+        <Grid item xs={1}></Grid>
+        <Grid item xs={11}>
+          {viewList ? <ListOfTasks data={tasks} /> : <Login data={tasks} />}
+        </Grid>
       </Grid>
     </div>
   );

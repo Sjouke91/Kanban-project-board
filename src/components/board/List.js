@@ -8,10 +8,14 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import FormatListNumberedIcon from "@material-ui/icons/FormatListNumbered";
+import { AccountCircle } from "@material-ui/icons";
+import "./List.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    paddingTop: "10vh",
   },
   header: {
     marginTop: "10px",
@@ -40,6 +44,12 @@ const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 650,
   },
+  list: {
+    color: theme.palette.text.secondary,
+    fontFamily: "'Courier New', Courier, monospace;",
+    fontSize: "1em",
+    fontWeight: 600,
+  },
 }));
 
 export default function ListOfTasks(props) {
@@ -57,6 +67,7 @@ export default function ListOfTasks(props) {
               <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                   <TableRow>
+                    <TableCell></TableCell>
                     <TableCell>Name</TableCell>
                     <TableCell align="left">Priorty</TableCell>
                     <TableCell align="left">Owner</TableCell>
@@ -66,16 +77,24 @@ export default function ListOfTasks(props) {
                 <TableBody>
                   {tasks.map((task, index) => (
                     <TableRow
-                      onClick={(e) => console.log("clicked", index)}
+                      onClick={(e) => console.log("clicked", task.id)}
                       hover={true}
                       key={index}
                     >
+                      <TableCell align="left">
+                        <FormatListNumberedIcon />
+                      </TableCell>
                       <TableCell component="th" scope="row">
                         {task.title}
                       </TableCell>
 
                       <TableCell align="left">{task.priority}</TableCell>
-                      <TableCell align="left">{task.owner}</TableCell>
+                      <TableCell align="left">
+                        <div className="owner">
+                          <AccountCircle id="icon" />
+                          <div id="text">{task.owner}</div>
+                        </div>
+                      </TableCell>
                       <TableCell align="left">{task.status}</TableCell>
                     </TableRow>
                   ))}
